@@ -125,4 +125,100 @@ input, button, textarea{
    position: relative;
 }
 
+/* modal -------------------------- */
+.dialog{
+    display: none;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.86);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding: 50px 0 20px 0;
+}
 
+.dialog-close{
+    color:#f47933;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.dialog-close i{
+    font-size: 1.4rem;
+    position: relative;
+    top: 2px;
+}
+
+.dialog-body{
+    display: none;
+    overflow-y: auto; 
+    width: 90%;
+    max-width: 760px;
+    max-height: 100%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.dialog-body-header{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #01c0b5;
+    line-height: 1.2;
+}
+
+.dialog-body-header strong {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.dialog-body-header span{
+    font-size:1.5rem;
+    font-weight: 400;
+    color: #01c0b5;
+}
+
+.dialog-cols .row{
+    margin-bottom: 20px;
+}
+
+.dialog-cols .row p{
+    margin-bottom: 10px;
+}
+
+.dialog-cols-header{
+    margin-bottom:10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #01c0b5;
+}
+
+.dialog-cols-header span{
+   font-family: 'Oswald' , sans-serif;
+   font-size: 1.25rem;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #01c0b5;
+   position: relative;
+}
+
+.dialog-cols-header span:after{
+    content: "";
+    background: #01c0b5;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+}
